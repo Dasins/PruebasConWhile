@@ -45,5 +45,22 @@ public class PruebasConWhile
         }
         System.out.println(aux);
     }
+    
+    /**
+     * @n El numero que se quiere saber si es primo.
+     * @return Devuelve true si n es primo. Falso si no lo es.
+     */
+    public boolean isPrime(int n) {
+        // Mientras se crea que n es primo, verdadero.
+        boolean isPrime = true;
+        int i = 2;
+        while(i < n && isPrime) {
+            if((n % i) == 0){
+                isPrime = false;
+            }
+            i++;
+        }
+        return isPrime;
+    }
 }
 
