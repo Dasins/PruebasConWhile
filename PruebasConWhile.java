@@ -8,14 +8,26 @@
 public class PruebasConWhile
 {
     /**
-     * Imprime por pantalla los multiplos de 5, menores o iguales que el limite.
-     * @param limit El numero limite. Si es multiplo de 5 se incluye.
+     * Imprime por la terminal los multiplos de 5, entre 10 y 95 (incluidos). 
      */
-    public void multiplesOfFive(int limit) {
-        int num = 5;
-        while (limit >= num) {
+    public void multiplosDe5() {
+        int num = 10;
+        while (95 >= num) {
             System.out.println(num);
             num += 5;
         }
+    }
+    
+    /**
+     * Imprime por la terminal la suma de los valores comprendidos entre 1 y 10
+     * (incluidos).
+     */
+    public void sumaEntre1y10() {
+        int num = 1, aux = num, i = 1;
+        while ((i + num) <= 10) {
+            aux = aux + (num + i);
+            i++;
+        }
+        System.out.println(aux);
     }
 }
