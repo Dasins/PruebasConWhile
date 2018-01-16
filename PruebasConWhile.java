@@ -30,4 +30,20 @@ public class PruebasConWhile
         }
         System.out.println(aux);
     }
+    
+    /**
+     * Imprime por la terminal la suma de todos los numeros enteros entre a y b
+     * (incluidos). Importante!! a debe ser menor que b
+     * @param a El numero inicial.
+     * @param b El numero al que se quiere llegar.
+     */
+    public void sum(int a, int b) {
+        int aux = a, i = 1;
+        while((a + i) <= b) {
+            aux = aux + (a + i);
+            i++;
+        }
+        System.out.println(aux);
+    }
 }
+
